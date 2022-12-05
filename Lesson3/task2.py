@@ -8,13 +8,13 @@ if len(my_list)%2 != 0 :
     print(new_size)
     for i in range(new_size):
         new=len(my_list)-1-i
-        new_list[i-1] = my_list[i] * my_list[new]
+        new_list.append(my_list[i] * my_list[new])
 else:
     new_size = int(len(my_list)/2)
     print(new_size)
     for i in range(new_size):
         new=len(my_list)-1-i
-        new_list[i-1] = my_list[i] * my_list[new]
+        new_list.append(my_list[i] * my_list[new])
 
 print (new_list)
 
