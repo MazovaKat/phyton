@@ -1,10 +1,18 @@
 # Задайте список из нескольких чисел. Напишите программу, 
 # которая найдёт сумму элементов списка с нечетными индексами.
 
-my_list = [2, 3, 5, 9, 3] 
-sum = 0
+from random import randint as rnd
+
+size = int(input("Введите размер списка: "))
+sum=0
+my_list = []
+
+for i in range(size):
+    my_list.append(rnd(0,100))
+print (my_list)
+
 for i in range(len(my_list)):
     if (i%2) != 0:
-        sum += my_list[i]
+        sum += int(my_list[i])
         
 print (sum)
